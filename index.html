@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites | Home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fdf6f0;
+        }
+
+        header {
+            background-color: #8B0000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x600/?restaurant,food');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .menu-item {
+            background-color: white;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #8B0000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .menu-items {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Delicious Bites</h1>
+    <p>Fresh • Local • Tasty</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Welcome to Delicious Bites</h2>
+    <p>Where every bite tells a story</p>
+</section>
+
+<section class="section" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+        <div class="menu-item">
+            <h3>Grilled Chicken</h3>
+            <p>Juicy grilled chicken served with seasonal veggies.</p>
+            <strong>$12.99</strong>
+        </div>
+        <div class="menu-item">
+            <h3>Veggie Delight</h3>
+            <p>Fresh garden vegetables tossed with herbs and spices.</p>
+            <strong>$9.99</strong>
+        </div>
+        <div class="menu-item">
+            <h3>Spaghetti Carbonara</h3>
+            <p>Classic Italian pasta with creamy sauce and bacon.</p>
+            <strong>$13.50</strong>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <h2>About Us</h2>
+    <p>We are a family-owned restaurant serving fresh, locally-sourced dishes. Our passion is bringing people together through great food in a cozy atmosphere.</p>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 123 Main Street, Food City</p>
+    <p>📞 (123) 456-7890</p>
+    <p>📧 info@deliciousbites.com</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
